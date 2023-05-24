@@ -1,0 +1,144 @@
+.container-login {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height:100%;
+}
+
+.form-container {
+  background: #d1cfcf;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.logo-login {  
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  margin-bottom: 10px;
+}
+.logo-login>img {
+  width: 40%;
+  
+}
+
+.form-container .title {
+  color: #5EA0D6;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin: 10px 0 20px;
+}
+
+.form-container .form-horizontal .form-group {
+  margin: 0 0 25px 0;
+}
+
+.form-container .form-horizontal .form-group label {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.form-container .form-horizontal .form-control {
+  color: #524f4f;
+  background: #ebe9e9;
+  font-size: 15px;
+  width: 85%;
+  padding: 20px 20px;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  transition: all 0.3s ease 0s;
+}
+
+.form-container .form-horizontal .form-control:focus {
+  box-shadow: inset 3px 3px 3px #a2c7f0c7, inset -3px -3px 6px #a2c7f0c7;
+  outline: none;
+}
+
+.form-container .form-horizontal .form-control::placeholder {
+  color: #b3b3b3;
+  font-size: 12px;
+}
+
+
+  
+  .btn {
+      padding: 12px 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor:pointer;
+      width: 100%;
+      background: linear-gradient(90deg, rgb(54,
+        99,
+        148) 35%, rgb(90, 162, 240) 100%);
+      border:none;
+      border-radius: 6px;      
+      position: relative;
+      overflow: hidden;
+    }
+  
+  .btn span {
+      color: rgb(255, 255, 255);
+      position: relative;
+      font-size: 15px; 
+      font-weight: bold;
+      z-index: 1;
+      transition: color 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+    }
+  
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      border-radius: 6px;
+      transform: translate(-100%, -50%);
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      transition: transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+    }
+  
+    .btn:hover span {
+      color: rgb(83, 82, 82);
+    }
+  
+    .btn:hover::before {
+      transform: translate(0, -50%);
+    }
+
+    .hi {
+      color: rgb(63, 62, 65);
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      position: relative;
+      font-size: 15px;
+      font-weight: bold;     
+  }
+  
+
+.form-container .form-horizontal .btn:hover,
+.form-container .form-horizontal .btn:focus {
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: none;
+  outline: none;
+}
+
+.form-error{
+  display: flex;
+  margin: 10px;
+  color: rgb(236, 26, 26);
+  justify-content: center;
+}
